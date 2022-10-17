@@ -10,27 +10,37 @@
     #button {margin-left: 200px;}
     content {margin-left: 8px; text-align: right; width: 130px; padding-right: 8px;}
     label {margin-left: 8px; text-align: right; width: 130px; padding-right: 8px;}
+    #info1 {margin-left: 8px; text-align: right; width: 130px; padding-right: 8px;}
+    #info2 {margin-left: 8px; text-align: right; width: 130px; padding-right: 8px;}
+    #info3 {margin-left: 8px; text-align: right; width: 130px; padding-right: 8px;}
+    #info4 {margin-left: 8px; text-align: right; width: 130px; padding-right: 8px;}
+    #info5 {margin-left: 8px; text-align: right; width: 130px; padding-right: 8px;}
+    #info6 {margin-left: 8px; text-align: right; width: 130px; padding-right: 8px;}
+    #info7 {margin-left: 8px; text-align: right; width: 130px; padding-right: 8px;}
     p {color:red;}
+    span {color: red;}
+    #dot {color: red;}
+    h6:first-letter {color: red;}
 </style>
 
 <body>
 <h2> 취업 정보 계정 만들기 </h2>
 <div id="msg"> * 필수 입력 항목 </div><br><br>
     <div id="tit1"> 기본 정보 </div>
-<br><br>
+<br>
     <h5>
         <form>
-            <label> 테스트 <p>*</p> <input type="text" size="8" value=""> </label> <br>
-            <label> <content> 이 름 </content> <p>*</p> <input type="text" size="8" value=""> </label> <br>
-            <label> <content> 이메일 </content> <p>*</p> <input type="email" size="15" placeholder="id@domain_name"> </label> <br>
-            <label> <content> 암호 </content> <p>*</p> <input type="password" size="12" value=""> </label> <br>
-            <label> <content> 암호 확인 </content>  <p>*</p> <input type="password" size="12" value=""> </label> <br>
-            <label> <content> 모바일 폰 </content> <p>*</p> <input type="tel" size="13" placeholder="010-0000-0000"> </label> <br>
-            <label> <content> 개인 홈페이지 </content> <input type="url" size="30" placeholder="http://"> </label> <br>
-        <label> <cotent> 주소 </cotent> <p>*</p> <input type="text" size="30" value=""> </label>
-        <br> <br>
+            <label> 테스트<h6>*</h6> <input type="text" size="8" value=""> </label> <br>
+            <div id="info1"> <label> 이 름<span>*</span> <input type="text" size="8" value=""> </label></div> <br>
+            <div id="info2"> 이메일<span>*</span> </div> <input type="email" size="15" placeholder="id@domain_name"><br>
+            <div id="info3"> 암호<span>*</span> </div> <input type="password" size="12" value=""><br>
+            <div id="info4"> 암호 확인<span>*</span> </div> <input type="password" size="12" value=""><br>
+            <div id="info5"> 모바일 폰<span>*</span> </div> <input type="tel" size="13" placeholder="010-0000-0000"><br>
+            <div id="info6"> 개인 홈페이지 </div> <input type="url" size="30" placeholder="http://"><br>
+            <div id="info7"> 주소<span>*</span> </div> <input type="text" size="30" value=""><br>
+            <br>
             <div id="tit2"> 학력 </div> <br> <br>
-            <label> <content> 학교 명 </content> <p>*</p> <input type="text" size="12" value=""> </label> <br>
+            <label> 학교 명<span>*</span><input type="text" size="12" value=""> </label> <br>
         <label> <content> 전공 </content> <p>*</p> <input type="text" size="12" value=""> </label> <br>
             <label> <content> 졸업 여부 </content> <p>*</p> <select name="graduation">
             <option value="1"> --선택-- </option>
