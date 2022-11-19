@@ -2,46 +2,77 @@
 <html>
 <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> <title> 계정 만들기(with CSS) </title> </head>
 <style>
-    .tit {background-color: lightblue; font-weight: bold; padding-left: 10px; width: 800px;}
-    #msg {font-size: 10pt; color: red;}
+    .tit {
+        background-color: lightblue;
+        font-weight: bold;
+        padding-left: 10px;
+        width: 800px;}
+
     #button {margin-left: 200px;}
-    .dot {color: red;}
-    .info {margin-left: 8px; text-align: right; width: 130px; padding-right: 8px;}
-    form {display: inline-block}
+
+    .dot {
+        display: inline;
+        margin-left: 0px;
+        padding-right: 0px;
+        width: 0px;
+        text-align: left;
+        color:red;}
+
+    form > div {
+            display: inline-block;
+            margin-left: 8px;}
+
+    form span {
+            display: inline-block;
+            text-align: right;
+            margin-left: 8px;
+            width: 130px;
+            padding-right: 8px;}
+
+    div > div {margin-left: 200px;}
 </style>
 
-<body>
+
 <h2> 취업 정보 계정 만들기 </h2>
-<div id="msg"> * 필수 입력 항목 </div>
+<div style="font-size: 10px; color: red"> * 필수 입력 항목 </div>
+
+<form>
     <p class="tit"> 기본 정보 </p>
-    <span class="info">이 름<span class="dot">*</span> <form><input type="text" size="8" value=""></form></span> <br>
-    <span class="info">이메일<span class="dot">*</span></span> <form><input type="email" size="15" placeholder="id@domain_name"></form> <br>
-    <span class="info">암호<span class="dot">*</span></span> <form><input type="password" size="12" value=""></form> <br>
-    <span class="info">암호 확인<span class="dot">*</span></span> <form><input type="password" size="12" value=""></form> <br>
-    <span class="info">모바일 폰<span class="dot">*</span></span> <form><input type="tel" size="13" placeholder="010-0000-0000"></form> <br>
-    <span class="info">개인 홈페이지</span> <form><input type="url" size="30" placeholder="http://"></form> <br>
-    <span class="info">주소<span class="dot">*</span></span> <form><input type="text" size="30" value=""></form> <br>
+    <div>
+        <span>이 름<span class="dot">*</span></span> <input type="text" size="8" value=""> <br>
+        <span>이메일<span class="dot">*</span></span> <input type="email" size="15" placeholder="id@domain_name"> <br>
+        <span>암호<span class="dot">*</span></span> <input type="password" size="12" value=""> <br>
+        <span>암호 확인<span class="dot">*</span></span> <input type="password" size="12" value=""> <br>
+        <span>모바일 폰<span class="dot">*</span></span> <input type="tel" size="13" placeholder="010-0000-0000"> <br>
+        <span>개인 홈페이지</span> <input type="url" size="30" placeholder="http://"> <br>
+        <span>주소<span class="dot">*</span></span> <input type="text" size="30" value=""> <br>
+    </div>
 
     <p class="tit"> 학력 </p>
-    <span class="info">학교 명<span class="dot">*</span></span> <form><input type="text" size="12" value=""></form> <br>
-    <span class="info">전공<span class="dot">*</span></span> <form><input type="text" size="12" value=""></form> <br>
-    <span class="info">졸업 여부<span class="dot">*</span></span> <form><select name="graduation">
+    <div>
+    <span>학교 명<span class="dot">*</span></span> <input type="text" size="12" value=""> <br>
+    <span>전공<span class="dot">*</span></span> <input type="text" size="12" value=""> <br>
+    <span>졸업 여부<span class="dot">*</span></span> <select name="graduation">
         <option value="1"> --선택-- </option>
         <option value="2"> 졸업예정 </option>
-        <option value="3"> 졸업 </option></select></form> <br>
-    <span class="info">졸업(예정)일</span> <form><input type="date"></form> <br>
+        <option value="3"> 졸업 </option></select> <br>
+    <span>졸업(예정)일</span> <input type="date" value="연도-월-일"> <br>
+    </div>
 
-    <p class="tit"> 업무경력 </p><br>
-    <span class="info"> 근무업체명 </span> <form><input type="text" size="20" value=""></form> <br>
-    <span class="info"> 직 위 </span> <form><input type="text" size="10" value=""></form> <br>
-    <span class="info"> 담당 업무 </span> <form><textarea cols="80" rows="10"> 이전 업체에서 담당한 업무를 기술하시오. </textarea></form> <br>
-    <span class="info"> 근무년수 </span> <form><input type="number" min="0.0" max="10.0" step="0.5">년</form> <br>
+    <p class="tit"> 업무경력 </p>
+    <div>
+    <span> 근무업체명 </span> <input type="text" size="20" value=""> <br>
+    <span> 직 위 </span> <input type="text" size="10" value=""> <br>
+    <span> 담당 업무 </span> <textarea cols="80" rows="10"> 이전 업체에서 담당한 업무를 기술하시오. </textarea> <br>
+    <span> 근무년수 </span> <input type="number" min="0.0" max="10.0" step="0.5">년 <br>
+    </div>
 
     <p class="tit"> 자기소개서 </p>
-        <form>
-            <label> 첨부파일 <input type="file"> </label>
-            <br> <br>
-            <div id= "button"> <input type="submit" value="제 출"> <input type="reset" value="재작성"> </div>
-        </form>
+    <div>
+       <label> 첨부파일 <input type="file"> </label>
+       <br> <br>
+       <div id= "button"> <input type="submit" value="제 출"> <input type="reset" value="재작성"> </div>
+   </div>
+</form>
 </body>
 </html>
