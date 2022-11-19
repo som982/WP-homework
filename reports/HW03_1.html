@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2진수를 16진수로 변환하기</title>
+</head>
+
+<script>
+    function prev_row(x_Binary) {
+        var x_Oct = parseInt(x_Binary);
+        var x_Hx = x_Oct.toString(16).toUpperCase();
+        return (x_Hx);
+    }
+</script>
+
+<body>
+    <h3>2진수를 입력받아 16진수로 출력하기</h3>
+    <hr>
+<script>
+    var n = prompt("16진수로 변환할 2진수를 입력하세요.","");
+    var new_n = prev_row(n);
+    document.write("2진수 " + n + "를 16진수로 변환하면 " + new_n + "입니다.");
+</script>
+</body>
+</html>
